@@ -1,0 +1,92 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;900&family=Poppins:wght@200;300&display=swap');
+
+body{
+    box-sizing: border-box;
+    font-family: "DMsans", sans-serif;
+    margin: 0;
+}
+.row {
+    margin: 0 !important;
+}
+
+
+
+/* Header11 */
+.nav-link {
+    color: #1E0E62 !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+.navbar-brand{
+color: #1E0E62 !important;
+text-align: center;
+font-size: 24px;
+font-weight: 700;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 h2{
+font-size: 48px;
+font-weight: 700;
+line-height: 70px;
+color: #1E0E62;
+width: 70%;
+}
+.section1 h5{
+    width: 70%;
+font-size: 16px;
+font-weight: 500;
+line-height: 32px;
+color: #15143966;
+}
+
+.btn1{
+    background: #25DAC5;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    padding: 12px 26px;
+}
+.btn2{
+    color: #1E0E62;
+    border: none;
+   background: #ffffff;
+   padding: 12px 26px;
+}
+.buy{
+    padding: 7px 20px;
+    color: #fff;
+    background: #482BE7;
+    border-radius: 30px;
+}
+.about{
+    color: #15143966;
+}
+.img1{
+margin-top: 25px;
+float: right;
+}
+
+@media screen and (max-width: 992px){
+    .section1 h5, .section1 h2{
+        margin-bottom: 100%;
+        width: 100%;
+    }
+    .greatThings{
+        margin: 15% auto;
+     width: 85%;
+      text-align: center;
+    }
+    .img1{
+        float: none;
+        display: flex;
+        justify-content: center; 
+    } 
+    .firstImg{
+        max-width: 100%;
+    }
+}
+
