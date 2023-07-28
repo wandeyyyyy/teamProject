@@ -2,7 +2,6 @@
 
 body{
     box-sizing: border-box;
-    font-family: "DMsans", sans-serif;
     margin: 0;
 }
 .row {
@@ -12,8 +11,8 @@ body{
 
 
 /* Header11 */
-.nav-link{
-    color: #1E0E62 !important;
+.na11 .nav-item .nav-link11{
+    color: #1E0E62;
     font-size: 14px;
     font-weight: 500;
 }
@@ -70,18 +69,48 @@ margin-top: 25px;
 float: right;
 }
 
+/* header12 */
+.header12body{
+    background: #2F1893;
+    color: #ffffff;
+}
+.header12{
+    font-family: "DM sans";
+    margin: 3% auto;
+}
+.header12section{
+   display: flex;
+   justify-content: center;
+   align-self: center;
+}
+.header12section .header12content{
+    width: 70%;
+}
 
+.header12section h2{
+    font-size: 40px;
+}
+.header12section p{
+    width: 65%;
+    font-size: 16px;
+}
+.header12btn{
+    background-color: #25DAC5;
+    color:#fff;
+    border-radius: 100px;
+    padding: 10px 20px;
+    border: none;
+}
 
 /* header13 */
-.nav13 li a{
-    color: #fff !important;
-}
+
 .icons{
     display: flex;
     justify-content: start;
 }
 .header13{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/img2.png);
+    font-family: "DMsans", sans-serif;
+    background:#1E0E62 url(./images/img2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -121,6 +150,110 @@ line-height: 60px;
 .brand13{
     color: #ffffff;
 }
+/* header14 */
+.header14{
+    background-color: #2F1893;
+}
+.purchase,.learnmore{
+    background: #E93A7D;
+    border-radius: 100px;
+    padding: 7px 20px;
+    color: #fff;
+    border: none;
+}
+.overview{
+    color: #fff;
+    opacity: 0.3;
+}
+.header14content{
+    color: #fff;
+}
+.header14main{
+    display: flex;
+    align-items: center;
+}
+.header14content h2{
+font-size: 46px;
+font-weight: 700;
+line-height: 70px;
+width: 75%;
+}
+.header14content h5{
+color: #FFF;
+font-size: 18px;
+font-weight: 500;
+line-height: 32px;
+width: 60%;
+}
+.section14{
+    margin: 5% auto;
+}
+/* header14 form */
+.formclass{
+    width: 450px;
+height: 500px;
+background: #ffffff;
+float:right;
+border-radius: 10px;
+padding: 20px 0;
+}
+.formclass h3{
+    padding: 12px 0;
+    color:#1E0E62;
+    font-size: 42px;
+}
+input[type=email],
+input[type=password] {
+    width: 306px;
+    padding: 12px 0 12px 24px;
+    color:#151439;
+    border-radius: 20px;
+    border:2px solid #ebeaed;
+    outline: none;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.label{
+    font-size: 14px;
+    color:#151439;
+    opacity: 0.8;
+    line-height: 26px;
+}
+input[type=checkbox]{
+    height: 14px;
+    width: 14px;
+    cursor: pointer;
+    accent-color: green;
+}
+.signIn14, .LoginIn14{
+    width: 306px;
+    border-radius: 100px;
+    padding: 12px 0;
+    border: none;
+color: #ffffff;
+}
+.signIn14{
+    background: #482BE7;
+}
+.LoginIn14{
+    background:  #1DA1F2;
+}
+.side{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+.formclass p{
+color: rgba(21, 20, 57, 0.40);
+}
+.signinlink{
+    color: #25DAC5;
+}
+
+
+
+
 
 @media screen and (max-width: 650px){
     .btnStart{
@@ -143,6 +276,7 @@ line-height: 60px;
 }
 
 @media screen and (max-width: 992px){
+    /* header11 */
     .section1 h5, .section1 h2{
         margin-bottom: 100%;
         width: 100%;
@@ -160,6 +294,25 @@ line-height: 60px;
     .firstImg{
         max-width: 100%;
     }
+    /* header12 */
+ .header12content h2, .header12content p{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .header12img{
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 500px;
+    }
+    .header12btn{
+        display: block;
+        margin: 0 auto;
+        padding: 6px 8px;
+    }
+
+
 /* header13 */
 
     .box1 h5{
@@ -178,6 +331,22 @@ line-height: 60px;
         position: absolute;
         top: 10px;
         right: 85px;
+    }
+    /* header14 */
+    .header14content{
+        width: 100%;
+        text-align: center;
+         margin-bottom: 15%;
+    }
+    .header14content h5, .header14content h2{
+        width: 100%;
+    }
+    .header14main{
+        width: 100%;
+    }
+    .mainform{
+        display: flex;
+        justify-content: center;
     }
 
 }
