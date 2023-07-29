@@ -8,7 +8,67 @@
 .row {
     margin: 0 !important;
 }
+/* index */
+.indexnav{
+    width: 20%;
+    box-shadow:2px 1px 3px darkblue;
+    height: 100%;
+    border-radius: 4px;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    background: #ed1c5b;
+    
+}
 
+.indexnav ul{
+margin: 0;
+padding: 0;
+margin-top: 5%;
+}
+
+.indexnav h2{
+    text-align: center;
+    padding: 10% 0;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.indexnav li{
+ list-style: none;
+ margin-bottom: 25%;
+ font-weight: bold;
+ padding: 5% 0;
+ cursor: pointer;
+ transition: all .5s ease;
+ border-radius: 1px;
+}
+.indexnav li:hover{
+background: black;
+color: #fff;
+
+}
+.indexnav li a{
+    text-decoration: none;
+    color: #fff;
+ 
+}
+.team{
+    display: flex;
+    justify-content: center;
+margin-top: 20%;
+width: 80%;
+margin-left: 20%;
+text-align: center;
+margin-top: 100px;
+font-size: 35px;
+line-height: 75px;
+color: #ed1c5b;
+text-shadow: 0px 3px 3px darkblue;
+
+}
 
 
 /* Header11 styling*/
@@ -158,36 +218,7 @@ line-height: 40px;
 .brand13{
     color: #ffffff;
 }
-.hr-lines:before{
-    content:" ";
-    display: block;
-    height: 1px;
-    width: 120px;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    background: rgba(21, 20, 57, 0.40);
-  }
-  .hr-lines{
-    position: relative;
-  }
-  .hr-lines{
-    position: relative;
-    /*  new lines  */
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .hr-lines:after{
-    content:" ";
-    height: 1px;
-    width: 120px;
-    background:rgba(21, 20, 57, 0.40);
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20%;
-  }
+
 /* header14 styling*/
 .header14{
     background-color: #2F1893;
@@ -288,6 +319,33 @@ color: rgba(21, 20, 57, 0.40);
 .signinlink{
     color: #25DAC5;
 }
+.hr-lines:before{
+    content:" ";
+    display: block;
+    height: 1px;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    background: rgba(21, 20, 57, 0.40);
+  }
+  
+  .hr-lines{
+    position: relative;
+    max-width: 500px;  
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hr-lines:after{
+    content:" ";
+    height: 1px;
+    width: 120px;
+    background:rgba(21, 20, 57, 0.40);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+  }
 
 /* header15 styling */
 .maincontent15{
@@ -386,6 +444,10 @@ border-radius: 100px;
 }
 
 @media screen and (max-width: 992px){
+    .team{
+      font-size: 22px;
+      line-height: 60px;
+    }
     /* header11 */
     .section1 h5, .section1 h2{
         margin-bottom: 100%;
@@ -444,6 +506,9 @@ border-radius: 100px;
         top: 10px;
         right: 85px;
     }
+    .hr-lines:after,.hr-lines:before{
+        display: none;
+    }
     /* header14 */
     .header14content{
         width: 100%;
@@ -460,7 +525,9 @@ border-radius: 100px;
         display: flex;
         justify-content: center;
     }
+    .hr{
 
+    }
 
     /* header 15 */
     .overall-imgcard-section{
