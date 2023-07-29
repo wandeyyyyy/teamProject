@@ -11,7 +11,7 @@
 /* index */
 .indexnav{
     width: 20%;
-    box-shadow:2px 1px 3px darkblue;
+    box-shadow:2px 1px 2px darkblue;
     height: 100%;
     
     text-align: center;
@@ -65,7 +65,7 @@ margin-top: 100px;
 font-size: 35px;
 line-height: 75px;
 color: #ed1c5b;
-text-shadow: 0px 2px 3px darkblue;
+text-shadow: 0px 1px 3px darkblue;
 
 }
 
