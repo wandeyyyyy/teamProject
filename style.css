@@ -13,14 +13,11 @@
     width: 20%;
     box-shadow:2px 1px 2px darkblue;
     height: 100%;
-    
     text-align: center;
     position: fixed;
     top:0;
     left: 0;
-    z-index: 1;
     background: #ed1c5b;
-    
 }
 
 .indexnav ul{
@@ -43,16 +40,17 @@ margin-top: 5%;
  cursor: pointer;
  transition: all .5s ease;
  border-radius: 1px;
+ 
 }
-.indexnav li:hover{
+.indexnav li a:hover{
 background: black;
 color: #fff;
-
 }
 .indexnav li a{
     text-decoration: none;
     color: #fff;
- 
+    display: block;
+    padding: 20px 15px;
 }
 .team{
     display: flex;
@@ -84,6 +82,9 @@ text-align: center;
 font-size: 24px;
 font-weight: 700;
 font-family: DM Sans;
+}
+.overall-section11{
+    margin-top: 5%;
 }
 .section1{
     display: flex;
@@ -172,7 +173,9 @@ float: right;
 }
 
 /* header13 styling */
-
+.overall-section13{
+    margin-top: 5%;  
+}
 .icons{
     display: flex;
     justify-content: start;
@@ -259,8 +262,8 @@ width: 60%;
 }
 /* header14 form styling*/
 .formclass{
-width: 450px;
-height: 500px;
+width:100%;
+
 background: #ffffff;
 float:right;
 border-radius: 10px;
@@ -273,7 +276,7 @@ padding: 20px 0;
 }
 input[type=email],
 input[type=password] {
-    width: 306px;
+    width: 90%;
     padding: 12px 0 12px 24px;
     color:#151439;
     border-radius: 20px;
@@ -296,7 +299,7 @@ input[type=checkbox]{
     accent-color: green;
 }
 .signIn14, .LoginIn14{
-    width: 306px;
+    width: 90%;
     border-radius: 100px;
     padding: 12px 0;
     border: none;
@@ -418,12 +421,27 @@ border-radius: 100px;
     left: 70%;
     bottom: 52%;
 }
+@media screen and (max-width: 400px){
+    .formclass h3{
+        font-size: 32px;
+    }
+    input[type=email],
+    input[type=password] , .signIn14,.LoginIn14{
+        width: 80%;
+    } 
+    .terms, .side{
+        font-size: 12px;
+    }
+    .mainImg{
+        width: 350px;
+        margin: 0;
+    }
+}
 
 
 
 
-
-@media screen and (max-width: 650px){
+@media screen and (min-width: 400px) and (max-width: 650px){
     .btnStart{
         position: absolute;
         top: 12px;
@@ -441,9 +459,20 @@ border-radius: 100px;
         height: 100vh;
         width: 100%;
     }
+    .mainImg{
+        width: 370px;
+        margin: 0;
+    }
+   
 }
-
+@media screen and (min-width: 650px) and (max-width: 992px){
+    .mainImg{
+        width: 500px;
+        margin: 0;
+    }
+}
 @media screen and (max-width: 992px){
+    /* index */
     .team{
       font-size: 18px;
       line-height: 60px;
@@ -460,7 +489,7 @@ border-radius: 100px;
         width: 100%;
     }
     .greatThings{
-        margin: 15% auto;
+     margin: 15% auto;
      width: 85%;
       text-align: center;
     }
@@ -470,7 +499,7 @@ border-radius: 100px;
         justify-content: center; 
     } 
     .firstImg{
-        max-width: 100%;
+        width: 100%;
     }
     /* header12 */
  .header12content h2, .header12content p{
@@ -478,20 +507,26 @@ border-radius: 100px;
         width: 100%;
         margin-bottom: 10%;
     }
+    .header12content h2{
+        font-size: 30px;
+    }
+
     .header12img{
         display: block;
-        margin: 20% auto;
-        width: 300px;
-        height: 500px;
+        margin: 20% 0 0 0;
+        width: 100%;
+        height: auto;
+       
     }
     .header12btn{
         display: block;
         margin: auto;
-        padding: 6px 8px;
+        padding: 10px 20px;
     }
 
 
 /* header13 */
+
     .header13{
         height: 120vh;
     }
@@ -532,7 +567,8 @@ border-radius: 100px;
         justify-content: center;
     }
    .formclass{
-    margin-top: 10%;
+    width: 100%;
+    margin-top: 3%;
    }
 
     /* header 15 */
@@ -545,7 +581,7 @@ border-radius: 100px;
         margin: auto;
     }
     .mainImg{
-        width: 250px;
+        
     }
     .maincontent15 h2{
         font-size: 28px;
