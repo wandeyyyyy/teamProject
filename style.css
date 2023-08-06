@@ -483,7 +483,12 @@ line-height: 32px;
 }
 .lastsection{
     margin-top: 8%;
+    margin-bottom: 3%;
 }
+.lastcontent .secondrow{
+    margin-bottom: 10%;
+}
+
 @media screen and (max-width: 450px){
     .formclass h3{
         font-size: 32px;
